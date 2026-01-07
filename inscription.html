@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		section{
+			border: 2px solid;
+			width: 50%;
+			margin-left: 25%;
+			background-color: whitesmoke;
+			padding: 25px;
+			border-radius: 5px;
+			border-color: #f7f7f7;
+			margin: 40px auto;
+		}
+
+		h4{
+			background-color: lightgray;
+			text-align: center;
+			padding: 10px;
+		}
+
+		#info{
+			color: red;
+			font-weight: 10px;
+			margin-left: 5%;
+		}
+
+		.formulaire{
+			width: 96%;
+			padding: 0px;
+			border-radius: 5px;
+			box-sizing: border-box;
+			margin: 5px;
+			outline: none; /* Supprime le contour bleu par défaut au clic */
+			justify-content: center;
+
+
+
+
+		}
+
+
+		.btn{
+			margin-top: 15px;
+			
+
+		}
+
+		.btn button{
+			background-color: #5bc0de;
+			border: 1px solid #5bc0de;
+			color: white;
+			padding: 5px;
+			border-radius: 5px;
+		}
+
+		.validannul{
+			
+			text-align: center;
+		}
+
+		input[type="submit"],
+		input[type="reset"]{
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			background-color: #4CAF50;
+			color: white;
+			cursor: pointer;
+			margin-top: 15px;
+			box-sizing: border-box;
+
+		}
+
+		input[type="reset"]{
+			background-color: #d9534f;
+		}
+
+		#couleur{
+			background-color: lightgray;
+		}
+		.formulaire:hover td {
+		    background-color: skyblue;
+		}
+		.form-table {
+		    width: 100%;
+		    border-collapse: collapse;
+		}
+
+.form-table td {
+    padding: 8px;
+    vertical-align: middle;
+}
+
+
+	</style>
+</head>
+<body>
+	<section>
+		<h4>Création de votre compte d'accès</h4>
+		<div id="info">
+			<ul type="disc">
+	        	<li><strong>Tous les champs sont obligatoires</strong></li>
+	        	<li><strong>Le mot de passe doit contenir 8 caractères minimum avec un mélange de chiffres et de lettres.</strong></li>
+	    	</ul>
+    	</div>
+	
+
+		<form>
+
+			<fieldset>
+				<table class="form-table">
+
+				    <tr class="formulaire">
+				        <td><label>Type d'identifiant :</label></td>
+				        <td>
+				            <select>
+				                <option>Sélectionnez le type d'identifiant</option>
+				                <option>Matricule</option>
+				                <option>Email</option>
+				            </select>
+				        </td>
+				    </tr>
+
+				    <tr class="formulaire" id="couleur">
+				        <td><label>Votre identifiant :</label></td>
+				        <td><input type="text" placeholder="Votre identifiant"></td>
+				    </tr>
+
+				    <tr class="formulaire">
+				        <td><label>Nom :</label></td>
+				        <td><input type="text" placeholder="Nom de famille"></td>
+				    </tr>
+
+				    <tr class="formulaire" id="couleur">
+				        <td><label>Prénoms :</label></td>
+				        <td><input type="text" placeholder="Prénoms"></td>
+				    </tr>
+
+				    <tr class="formulaire">
+				        <td><label>Mot de passe :</label></td>
+				        <td><input type="password" placeholder="Créer un mot de passe"></td>
+				    </tr>
+
+				    <tr class="formulaire"id="couleur">
+				        <td><label>Confirmation du mot de passe :</label></td>
+				        <td><input type="password" placeholder="Confirmer votre mot de passe"></td>
+				    </tr>
+
+				    <tr class="formulaire">
+				        <td><label>E-mail personnel :</label></td>
+				        <td><input type="email" placeholder="E-mail personnel"></td>
+				    </tr>
+
+				    <tr class="formulaire" id="couleur">
+				        <td><label>Captcha :</label></td>
+				        <td><input type="text" placeholder="Saisisser les caractères ci-dessous"></td>
+				    </tr>
+
+				</table>
+
+			</fieldset>
+
+			<div class="btn">
+				<button>Regenerer</button>
+			</div>
+
+		</form>
+
+		<form class="validannul">
+			<div class="boutons">
+				<input type="submit" value="Valider">
+				<input type="reset" value="Annuler">
+			</div>
+		</form>
+	</section>
+
+</body>
+</html>

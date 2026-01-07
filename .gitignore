@@ -1,0 +1,20 @@
+# System
+Thumbs.db
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Env
+.env
+
+# Logs
+*.log
+
+# Node (in case)
+node_modules/
+
+# Build
+dist/
